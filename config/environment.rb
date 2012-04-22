@@ -50,6 +50,7 @@ Rails::Initializer.run do |config|
   # Define your email configuration in configuration.yml instead.
   # It will automatically turn deliveries on
   config.action_mailer.perform_deliveries = false
+  config.action_controller.session = { :key => "_myapp_session", :secret => "87cb36846dd0b413d28f3a208cbe70b2" }
 
   # Load any local configuration that is kept out of source control
   # (e.g. gems, patches).
